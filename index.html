@@ -468,17 +468,19 @@
     <script type="importmap">
         {
             "imports": {
-                "three": "/node_modules/three/build/three.module.js",
-                "three/addons/": "/node_modules/three/examples/jsm/"
+                "three": "https://unpkg.com/three/build/three.module.js",
+                "three/": "https://unpkg.com/three/"
             }
         }
-	</script>
+    </script>
 
     <script type="module">
 
         import * as THREE from 'three'
-        import { TrackballControls } from 'three/addons/controls/TrackballControls.js'
-        import { TransformControls } from 'three/addons/controls/TransformControls.js'
+        import { TrackballControls } from 'three/examples/jsm/controls/TrackballControls.js'
+        import { TransformControls } from 'three/examples/jsm/controls/TransformControls.js'
+        // import { TrackballControls } from 'three/addons/controls/TrackballControls.js'
+        // import { TransformControls } from 'three/addons/controls/TransformControls.js'
         import { Pane } from 'https://cdn.jsdelivr.net/npm/tweakpane@4.0.1/dist/tweakpane.min.js'
 
         function addSetupTo(mesh) {
